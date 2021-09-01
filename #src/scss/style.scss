@@ -32,7 +32,8 @@ $fontFamily: 'Exo', sans-serif;
 //component
 
 
-.loyalty {
+
+
   @import "_defuld/originStyle";
   @import "_basice/forms";
   //main
@@ -44,6 +45,6 @@ $fontFamily: 'Exo', sans-serif;
   @import "main/table.scss";
   @import "main/calculator.scss";
 
-}
+
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
