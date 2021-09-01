@@ -1,0 +1,49 @@
+.top{
+  padding: 15px 0;
+}
+.top-sec{
+  padding: 15px 0 15px 0;
+  margin-bottom: 35px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.top-sec__wr{
+  @include mq('tablet-990') {
+    width: 380px;
+    margin: auto;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.top-sec__text{
+  @include adaptiv-font(36, 28,1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.top-sec__number{
+  @include adaptiv-font(72, 33,1);
+  font-weight: 700;
+  color: $color_3;
+}
+
+.top-sec__btn{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background: $color_4;
+  color: $color_1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  grid-column: span 2;
+  @include mq('tablet-wide') {
+    width: 300px;
+
+  }
+}

@@ -1,0 +1,38 @@
+.popup#popup_1
+    .popup__body
+        .popup__content.brif__content
+            a.popup__close.close-popup
+                img(src="img/icons/close.svg")
+            .popup__title Откликнуться на вакансию
+            .popup__text Мы максимально быстро свяжемся с вами для уточнения всех деталей работы и подробно расскажем вам как начать сотрудничество
+            form.modal-form(action="#" id="form" method="post" enctype="multipart/form-data" autocomplete="off")
+                .user-data
+                    .user-data__wrapper
+                        input(placeholder='Имя*' type="text" name="name" required).user-data__input
+                    .user-data__wrapper
+                        input(placeholder='Электронная почта' type="text" name="email" required).user-data__input.email
+                    .user-data__wrapper
+                        input(placeholder='Телефон*' type="tel" name="phone" required).user-data__input.phone
+                    .user-data__wrapper
+                        input(placeholder='Какая вакансия вас интересует?*').user-data__input
+                    .user-data__wrapper.textarea
+                        textarea(placeholder='Расскажите коротко о себе, добавьте ссылки на свои работы').user-data__input
+                .modal-form__file
+                    .file__item
+                        input#formDoc(accept=".pdf, .word, .txt" type="file" name="doc").file__input
+                        .file__button Прикрепите сопроводительное письмо, резюме, портфолио (до 10 МБ)
+                .checkbox
+                    input(id="checkAgreement" checked type="checkbox" name="agreement" class="checkbox__input" required)
+                    label(for="checkAgreement").checkbox__label
+                        span Я соглашаюсь с  <a href="">политикой конфиденциальности</a>*</span>
+
+
+                button.modal-form__btn.button(type="submit") Отправить
+
+
+.popup.popup_massagename-message#popup_2
+    .popup__body
+        .popup__content.massagename__content
+            .popup__close
+            .popup__title Сообщение отправленно Спасибо!
+            .popup__description Скоро с вами свяжутся

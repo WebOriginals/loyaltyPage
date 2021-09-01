@@ -1,0 +1,120 @@
+.select {
+	position: relative;
+}
+.select__item {
+	position: relative;
+}
+.select__title {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.select__value {
+	display: flex;
+	font-size: 14px;
+	font-weight: 700;
+	height: 30px;
+	padding: 0px 15px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+.select__value span {
+	height: 1em;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.select__value::before {
+	content: "";
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	width: 11px;
+	height: 7px;
+	background: url("../img/select.svg") center / 100% no-repeat;
+}
+.select__options {
+	color: #000;
+	display: none;
+	position: absolute;
+	top: 28px;
+	min-width: 100%;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.1);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: 0;
+	font-size: 16px;
+	padding: 0px 0px 5px 0px;
+	max-height: 250px;
+	overflow-y: scroll;
+
+
+	.all-checkbox ::-webkit-scrollbar-button {
+		background-repeat: no-repeat;
+		width: 5px;
+		height: 0;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #e7e7e7;
+		border-radius: 50px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: rgba(1, 90, 254, 0.2);
+	}
+
+	&::-webkit-resizer {
+		background-repeat: no-repeat;
+		width: 5px;
+		height: 0;
+	}
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+
+	&::-webkit-scrollbar-button {
+		background-repeat: no-repeat;
+		width: 5px;
+		height: 0;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 50px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: rgba(1, 90, 254, 0.2);
+	}
+
+	&::-webkit-resizer {
+		background-repeat: no-repeat;
+		width: 7px;
+		height: 0;
+	}
+
+	&::-webkit-scrollbar {
+		width: 5px !important;
+	}
+}
+.select__option {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin: 0px 0px 0px 0px;
+}
+.select._active {
+	z-index: 5;
+}
+.select._active .select__value::before {
+	transform: rotate(-180deg);
+}
+.select._active.select__options {
+	display: block;
+}

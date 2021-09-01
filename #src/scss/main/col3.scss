@@ -1,0 +1,30 @@
+.col3{
+padding: 15px 0;
+}
+
+.col3__body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px 30px;
+}
+
+.col3-column{
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.col3-column__text{
+  @include adaptiv-font(14,14,1);
+  font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+  span{
+    color: $color_3;
+  }
+}
