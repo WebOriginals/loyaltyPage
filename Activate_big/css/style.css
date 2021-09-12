@@ -11,7 +11,25 @@ body._lock {
   overflow: hidden;
 }
 
-.loyalty .title {
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._container {
+  max-width: 905px;
+  margin: 0 auto;
+}
+
+.title {
   font-size: 18px;
   font-weight: 700;
   font-family: 'Exo 2', sans-serif;
@@ -19,7 +37,7 @@ body._lock {
   margin-bottom: calc(30px + 15 * ((100vw - 320px) / 1600));
 }
 
-.loyalty .offer {
+.offer {
   font-size: 14px;
   font-weight: 700;
   font-family: 'Exo 2', sans-serif;
@@ -27,7 +45,7 @@ body._lock {
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
 }
 
-.loyalty .h2 {
+.h2 {
   color: #333333;
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
   font-weight: 700;
@@ -35,7 +53,7 @@ body._lock {
   font-size: 14px;
 }
 
-.loyalty .h3 {
+.h3 {
   color: #333333;
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
   font-weight: 700;
@@ -43,38 +61,38 @@ body._lock {
   font-size: 14px;
 }
 
-.loyalty .h3 span {
+.h3 span {
   display: block;
   color: #EA5400;
 }
 
-.loyalty .h4 {
+.h4 {
   color: #333333;
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 15px;
 }
 
-.loyalty .h4 span {
+.h4 span {
   color: #EA5400;
 }
 
-.loyalty .h5 {
+.h5 {
   font-size: 18px;
   color: #EA5400;
   margin-bottom: 15px;
   font-weight: 700;
 }
 
-.loyalty .h6 {
+.h6 {
   font-weight: 700;
 }
 
-.loyalty .padding {
+.padding {
   padding-left: 320px;
 }
 
-.loyalty .button {
+.button {
   background: -webkit-gradient(linear, right top, left top, from(#EA5400), to(#F67C00));
   background: -o-linear-gradient(right, #EA5400 0%, #F67C00 100%);
   background: linear-gradient(270deg, #EA5400 0%, #F67C00 100%);
@@ -104,12 +122,12 @@ body._lock {
   text-transform: uppercase;
 }
 
-.loyalty .button:hover {
+.button:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.loyalty .button:focus {
+.button:focus {
   -webkit-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
@@ -724,28 +742,41 @@ body._lock {
   }
 }
 
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 925px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+
 @media (max-width: 905px) {
   body {
     font-size: calc(14px + 0 * ((100vw - 320px) / 585));
   }
 
-  .loyalty .title {
+  .title {
     font-size: calc(16px + 2 * ((100vw - 320px) / 585));
   }
 
-  .loyalty .offer {
+  .offer {
     font-size: calc(14px + 0 * ((100vw - 320px) / 585));
   }
 
-  .loyalty .h3 {
+  .h3 {
     font-size: calc(14px + 0 * ((100vw - 320px) / 585));
   }
 
-  .loyalty .h4 {
+  .h4 {
     font-size: calc(14px + 0 * ((100vw - 320px) / 585));
   }
 
-  .loyalty .h5 {
+  .h5 {
     font-size: calc(16px + 2 * ((100vw - 320px) / 585));
   }
 
@@ -759,6 +790,13 @@ body._lock {
 
   .col3-column__text {
     font-size: calc(14px + 0 * ((100vw - 320px) / 585));
+  }
+}
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: none;
+    padding: 0 20px;
   }
 }
 
