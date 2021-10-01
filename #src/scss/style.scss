@@ -47,6 +47,11 @@ $fontFamily: 'Exo', sans-serif;
 //partner software
 @import "partnerSoftware/text.scss";
 
+//grid
+@import "blog/grid.scss";
+@import "blog/blog.scss";
+@import "blog/aside.scss";
+
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

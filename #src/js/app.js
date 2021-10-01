@@ -1,2 +1,3 @@
-@@include('files/calculator.js')
+
 @@include('files/select.js')
+@@include('files/search.js')

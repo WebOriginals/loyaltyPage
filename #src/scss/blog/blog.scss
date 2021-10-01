@@ -1,0 +1,107 @@
+.blog{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+
+  &__search{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    grid-gap: 10px;
+    border-bottom: 1px solid #C4C4C4;
+    input{
+      border: none;
+      font-size: 14px;
+      &::placeholder{
+        color: #727272;
+
+      }
+    }
+  }
+
+  &__body{
+    padding: 0 0 30px;
+  }
+  &-element{
+    &.hide{
+      display: none;
+    }
+
+    padding: 20px 0 ;
+    &:not(:last-child){
+      border-bottom: 1px solid #DCDCE4;
+    }
+
+    &-top{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      &__name{
+        padding-right: 5px;
+        color: #727272;
+        font-weight: 700;
+      }
+      &__name.blog-element-top__name-orang{
+
+      }
+      &__el{
+        background-color: #C4C4C4;
+        border-radius: 20px;
+        color: #fff;
+        padding: 2px 8px;
+      }
+      &__el.blog-element-top__el-orang{
+        background-color: #EA5400;
+        border-radius: 20px;
+      }
+    }
+
+    &-main{
+      margin-top: 10px;
+      color: #333333;
+      display: grid;
+      grid-gap: 10px 20px;
+      grid-template-columns: 180px 1fr;
+
+      &__img{
+        grid-row: span 3;
+      }
+      &__title{
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &__link{
+        color: #EA5400;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+    }
+  }
+  &-pagenation{
+    a{
+      color: #EA5400;
+      font-weight: 700;
+      padding: 0 5px;
+      &:hover{
+        color: #333333;
+      }
+    }
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+    &__list{
+      display: flex;
+      gap: 5px;
+
+      li.active{
+        a{
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
