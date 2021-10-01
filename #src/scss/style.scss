@@ -25,7 +25,7 @@ $fontFamily: 'Exo', sans-serif;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 @import "_defuld/originStyle";
-@import "_basice/forms";
+//@import "_basice/forms";
 
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -35,17 +35,17 @@ $fontFamily: 'Exo', sans-serif;
 
 
 
-//main
-@import "main/top.scss";
-@import "main/col3.scss";
-@import "main/bonuses.scss";
-@import "main/text.scss";
-@import "main/col2.scss";
-@import "main/table.scss";
-@import "main/calculator.scss";
-
-//partner software
-@import "partnerSoftware/text.scss";
+////main
+//@import "main/top.scss";
+//@import "main/col3.scss";
+//@import "main/bonuses.scss";
+//@import "main/text.scss";
+//@import "main/col2.scss";
+//@import "main/table.scss";
+//@import "main/calculator.scss";
+//
+////partner software
+//@import "partnerSoftware/text.scss";
 
 //grid
 @import "blog/grid.scss";

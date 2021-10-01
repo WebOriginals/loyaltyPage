@@ -22,32 +22,32 @@ $md4: 479.98;
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
-body {
-  @include adaptiv-font(14, 14,1);
-  font-weight: 400;
-  color: #222222;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  background-color: $color_1;
-
-  &._lock {
-    overflow: hidden;
-  }
-}
+//body {
+//  @include adaptiv-font(14, 14,1);
+//  font-weight: 400;
+//  color: #222222;
+//  letter-spacing: 0.02em;
+//  line-height: 1.5;
+//  background-color: $color_1;
+//
+//  &._lock {
+//    overflow: hidden;
+//  }
+//}
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 //<ОБОЛОЧКА>===========================================================================================================
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-
-  &._loaded {
-  }
-}
+//.wrapper {
+//  width: 100%;
+//  min-height: 100%;
+//  overflow: hidden;
+//  display: flex;
+//  flex-direction: column;
+//
+//  &._loaded {
+//  }
+//}
 
 //</ОБОЛОЧКА>===========================================================================================================
 
@@ -80,165 +80,165 @@ body {
   @include adaptiv-margin-bottom(35,30);
 }
 
-.offer{
-  @include adaptiv-font(14,14,1);
-  font-weight: 700;
-  font-family: 'Exo 2', sans-serif;
-  text-transform: uppercase;
-  @include adaptiv-margin-bottom(20,15);
-}
-
-.h2{
-  color: $color_2;
-  @include adaptiv-margin-bottom(20,15);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.h3{
-  color: $color_2;
-  @include adaptiv-margin-bottom(20,15);
-  font-weight: 700;
-  text-transform: uppercase;
-  @include adaptiv-font(14,14,1);
-  span{
-    display: block;
-    color: $color_3;
-  }
-}
-
-.h4{
-  color: $color_2;
-  font-weight: 700;
-  @include adaptiv-font(14,14,1);
-  margin-bottom: 15px;
-  span{
-    color: $color_3;
-  }
-}
-
-.h5{
-  @include adaptiv-font(18,16,1);
-  color: $color_3;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.h6{
-  font-weight: 700;
-}
-
-.padding{
-  padding-left: 320px;
-}
-
-ol.text-list-Ol{
-  list-style-type: none;
-  counter-reset: num;
-  margin: 0 0 35px 25px;
-  //padding: 0 0 40px 0;
-
-  >li{
-    color: $color_2;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    span{
-      color: $color_3;
-    }
-
-
-    &:before {
-      content: counter(num) '';
-      counter-increment: num;
-      display: inline-block;
-      position: absolute;
-      top: -7px;
-      left: -26px;
-      width: 20px;
-      color: $color_3;
-      text-align: right;
-      font-size: 24px;
-      font-weight: 700;
-    }
-  }
-}
-
-ul.text-list-Ul{
-  margin-bottom: 35px;
-  >li{
-    padding-left: 25px;
-    background: url('../img/icons/point.png') 0 -3px  no-repeat;
-    margin-bottom: 10px;
-    background-size: 24px;
-    span{
-      color: $color_3;
-      font-weight: 700;
-    }
-    ul{
-      margin-top: 5px;
-      margin-left: 20px;
-      li{
-        list-style: disc;
-        margin-bottom: 5px;
-      }
-    }
-  }
-}
+//.offer{
+//  @include adaptiv-font(14,14,1);
+//  font-weight: 700;
+//  font-family: 'Exo 2', sans-serif;
+//  text-transform: uppercase;
+//  @include adaptiv-margin-bottom(20,15);
+//}
+//
+//.h2{
+//  color: $color_2;
+//  @include adaptiv-margin-bottom(20,15);
+//  font-weight: 700;
+//  text-transform: uppercase;
+//  font-size: 14px;
+//}
+//
+//.h3{
+//  color: $color_2;
+//  @include adaptiv-margin-bottom(20,15);
+//  font-weight: 700;
+//  text-transform: uppercase;
+//  @include adaptiv-font(14,14,1);
+//  span{
+//    display: block;
+//    color: $color_3;
+//  }
+//}
+//
+//.h4{
+//  color: $color_2;
+//  font-weight: 700;
+//  @include adaptiv-font(14,14,1);
+//  margin-bottom: 15px;
+//  span{
+//    color: $color_3;
+//  }
+//}
+//
+//.h5{
+//  @include adaptiv-font(18,16,1);
+//  color: $color_3;
+//  margin-bottom: 15px;
+//  font-weight: 700;
+//}
+//
+//.h6{
+//  font-weight: 700;
+//}
+//
+//.padding{
+//  padding-left: 320px;
+//}
+//
+//ol.text-list-Ol{
+//  list-style-type: none;
+//  counter-reset: num;
+//  margin: 0 0 35px 25px;
+//  //padding: 0 0 40px 0;
+//
+//  >li{
+//    color: $color_2;
+//    font-size: 14px;
+//    font-weight: 400;
+//    margin-bottom: 10px;
+//    position: relative;
+//    display: flex;
+//    flex-direction: column;
+//    span{
+//      color: $color_3;
+//    }
+//
+//
+//    &:before {
+//      content: counter(num) '';
+//      counter-increment: num;
+//      display: inline-block;
+//      position: absolute;
+//      top: -7px;
+//      left: -26px;
+//      width: 20px;
+//      color: $color_3;
+//      text-align: right;
+//      font-size: 24px;
+//      font-weight: 700;
+//    }
+//  }
+//}
+//
+//ul.text-list-Ul{
+//  margin-bottom: 35px;
+//  >li{
+//    padding-left: 25px;
+//    background: url('../img/icons/point.png') 0 -3px  no-repeat;
+//    margin-bottom: 10px;
+//    background-size: 24px;
+//    span{
+//      color: $color_3;
+//      font-weight: 700;
+//    }
+//    ul{
+//      margin-top: 5px;
+//      margin-left: 20px;
+//      li{
+//        list-style: disc;
+//        margin-bottom: 5px;
+//      }
+//    }
+//  }
+//}
 
 
 //-----------Кнопка основная------------------
 
-.button {
-  background: $color_4;
-  color: $color_1;
-  padding: 0 27px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 38px;
-  cursor: pointer;
-  transition: .5s;
-  width: fit-content;
-  font-size: 14px;
-  font-weight: 600;
-  border: 1px solid $color_3;
-  border-radius: 5px;
-  text-transform: uppercase;
-
-
-  &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  &:focus {
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
-  }
-}
+//.button {
+//  background: $color_4;
+//  color: $color_1;
+//  padding: 0 27px;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  min-height: 38px;
+//  cursor: pointer;
+//  transition: .5s;
+//  width: fit-content;
+//  font-size: 14px;
+//  font-weight: 600;
+//  border: 1px solid $color_3;
+//  border-radius: 5px;
+//  text-transform: uppercase;
+//
+//
+//  &:hover {
+//    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//  }
+//  &:focus {
+//    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+//  }
+//}
 
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "null";
+//@import "null";
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
-.page {
-  flex: 1 1 auto;
-  padding-top: 55px;
-  padding-bottom: 30px;
-  @include mq('desktop') {
-    padding-top: 120px;
-
-  }
-
-  &.main {
-    padding-top: 0 !important;
-  }
-
-}
+//.page {
+//  flex: 1 1 auto;
+//  padding-top: 55px;
+//  padding-bottom: 30px;
+//  @include mq('desktop') {
+//    padding-top: 120px;
+//
+//  }
+//
+//  &.main {
+//    padding-top: 0 !important;
+//  }
+//
+//}
 
 //===================================================================================================================================
 
