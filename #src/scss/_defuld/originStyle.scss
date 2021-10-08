@@ -22,18 +22,18 @@ $md4: 479.98;
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
-//body {
-//  @include adaptiv-font(14, 14,1);
-//  font-weight: 400;
-//  color: #222222;
-//  letter-spacing: 0.02em;
-//  line-height: 1.5;
-//  background-color: $color_1;
-//
-//  &._lock {
-//    overflow: hidden;
-//  }
-//}
+body {
+  @include adaptiv-font(14, 14,1);
+  font-weight: 400;
+  color: #222222;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  background-color: $color_1;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -80,13 +80,13 @@ $md4: 479.98;
   @include adaptiv-margin-bottom(35,30);
 }
 
-//.offer{
-//  @include adaptiv-font(14,14,1);
-//  font-weight: 700;
-//  font-family: 'Exo 2', sans-serif;
-//  text-transform: uppercase;
-//  @include adaptiv-margin-bottom(20,15);
-//}
+.offer{
+  @include adaptiv-font(14,14,1);
+  font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
+  text-transform: uppercase;
+  @include adaptiv-margin-bottom(20,15);
+}
 //
 //.h2{
 //  color: $color_2;
@@ -168,27 +168,27 @@ $md4: 479.98;
 //  }
 //}
 //
-//ul.text-list-Ul{
-//  margin-bottom: 35px;
-//  >li{
-//    padding-left: 25px;
-//    background: url('../img/icons/point.png') 0 -3px  no-repeat;
-//    margin-bottom: 10px;
-//    background-size: 24px;
-//    span{
-//      color: $color_3;
-//      font-weight: 700;
-//    }
-//    ul{
-//      margin-top: 5px;
-//      margin-left: 20px;
-//      li{
-//        list-style: disc;
-//        margin-bottom: 5px;
-//      }
-//    }
-//  }
-//}
+ul.text-list-Ul{
+  margin-bottom: 35px;
+  >li{
+    padding-left: 25px;
+    background: url('../img/icons/point.png') 0 -3px  no-repeat;
+    margin-bottom: 10px;
+    background-size: 24px;
+    span{
+      color: $color_3;
+      font-weight: 700;
+    }
+    ul{
+      margin-top: 5px;
+      margin-left: 20px;
+      li{
+        list-style: disc;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
 
 
 //-----------Кнопка основная------------------
@@ -222,7 +222,7 @@ $md4: 479.98;
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-//@import "null";
+@import "null";
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 //.page {

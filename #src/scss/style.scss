@@ -36,21 +36,26 @@ $fontFamily: 'Exo', sans-serif;
 
 
 ////main
-//@import "main/top.scss";
-//@import "main/col3.scss";
-//@import "main/bonuses.scss";
-//@import "main/text.scss";
-//@import "main/col2.scss";
-//@import "main/table.scss";
-//@import "main/calculator.scss";
-//
-////partner software
-//@import "partnerSoftware/text.scss";
+@import "main/top.scss";
+@import "main/col3.scss";
+@import "main/bonuses.scss";
+@import "main/text.scss";
+@import "main/col2.scss";
+@import "main/table.scss";
+@import "main/calculator.scss";
 
-//grid
+//partner software
+@import "partnerSoftware/text.scss";
+
+//blog
 @import "blog/grid.scss";
 @import "blog/blog.scss";
 @import "blog/aside.scss";
+
+//service
+@import "service/service.scss";
+@import "service/serviceGrid.scss";
+@import "service/serviceDescription.scss";
 
 
 

@@ -1,0 +1,34 @@
+.serviceDescription {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  @include mq('tablet-wide') {
+    padding: 25px;
+  }
+
+  &__text {
+    p {
+      margin-bottom: 10px;
+      a{
+        text-decoration: underline;
+      }
+      span{
+        color: $color_3;
+      }
+    }
+    margin-bottom: 20px;
+  }
+  &__numberList{
+    margin-bottom: 20px;
+    ol{
+      margin: 10px 0 0 15px;
+    }
+  }
+  &__list{
+    margin-bottom: 20px;
+    ul{
+      margin-top: 15px;
+    }
+  }
+}
