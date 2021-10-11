@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -19,7 +21,7 @@ body._lock {
 .title {
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   margin-bottom: calc(30px + 5 * ((100vw - 320px) / 1600));
 }
@@ -27,7 +29,7 @@ body._lock {
 .offer {
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
 }
@@ -239,7 +241,7 @@ h6 {
 .col3-column__text {
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
@@ -794,6 +796,42 @@ h6 {
 }
 
 .blog-aside-list__el:hover {
+  color: #EA5400;
+}
+
+.blog-aside-list__el input[type=checkbox] {
+  display: none;
+}
+
+.blog-aside-list__el label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-right: 25px;
+  font-size: 13px;
+  display: block;
+}
+
+.blog-aside-list__el label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+
+.blog-aside-list__el input[type=checkbox]:checked + label:before {
+  content: "✓";
+  font-size: 15px;
+  color: #EA5400;
+  text-align: center;
+  line-height: 15px;
+}
+
+.blog-aside-list__el input[type=checkbox]:checked + label {
   color: #EA5400;
 }
 

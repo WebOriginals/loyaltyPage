@@ -4,3 +4,4 @@ howtouse.txt
 package-lock.json
 gulpfile.js
 package.json
+.gitignore
